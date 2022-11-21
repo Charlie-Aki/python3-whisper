@@ -51,3 +51,6 @@ whisper ./sound/sample.mp3 --language ja
 
 ## 参考にしたURL
 https://zenn.dev/kento1109/articles/d7d8f512802935
+
+## ライセンス
+[MIT License](./LICENSE)
