@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app:
+    container_name: python3-whisper
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: python:3-slim
+    restart: always
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/workspace
