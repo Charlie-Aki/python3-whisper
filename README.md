@@ -24,7 +24,7 @@ git clone等でローカルにダウンロードしてください。
 git clone https://github.com/Charlie-Aki/python3-whisper
 ```
 
-## 使い方
+## コンテナの起動
 ダウンロードしたフォルダに移動します。
 ```bash
 cd python3-whisper
@@ -39,8 +39,8 @@ CONTAINER ID   IMAGE                COMMAND                  CREATED          ST
 c2e038cdc7eb   python:3-slim        "python3"                55 seconds ago   Up 54 seconds                            python3-whisper
 ```
 
-
-その後`docker exec`で`bash`を立ち上げます。
+## whisperの使い方
+`docker exec`で`bash`を立ち上げます。
 ```bash
 docker exec -it python3-whisper bash
 ```
@@ -48,6 +48,17 @@ whisperを用いて音声ファイルをテキストファイルに書き出し�
 ```bash
 whisper ./sound/sample.mp3 --language ja
 ```
+
+## コンテナの終了
+コンテナの終了
+```bash
+docker compose down
+```
+使われていないイメージの削除
+```bash
+docker image prune
+```
+
 
 ## 参考にしたURL
 https://zenn.dev/kento1109/articles/d7d8f512802935
