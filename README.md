@@ -62,7 +62,8 @@ docker image prune
 
 ## 参考にしたURL
 https://zenn.dev/kento1109/articles/d7d8f512802935
-(Dockerfileはほぼこちらの記載そのまま)
+
+(Dockerfileはほぼこちらの記載そのまま使わせてもらいました)
 
 ## ライセンス
 [MIT License](./LICENSE)
