@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: python:3-slim
+    image: python:3.9-slim
     restart: always
     tty: true
     stdin_open: true
