@@ -52,11 +52,11 @@ whisper ./sound/sample.mp3 --language ja
 ## コンテナの終了
 コンテナの終了
 ```bash
-docker compose down
+docker compose down --rmi all
 ```
 使われていないイメージの削除
 ```bash
-docker image prune
+docker image prune -a
 ```
 
 
